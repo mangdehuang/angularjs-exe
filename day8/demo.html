@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+	<head>
+<html>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body ng-app="myApp">
+		<div ng-controller="myCtrl">
+			<input type="text" ng-model="lastname" />
+			<input type="text" ng-model="firstname" />
+			{{fullname()}}
+			{{f2()}}
+		</div>
+		
+		<div ng-controller="myCtrl2">
+			<ul>
+				<li ng-repeat="x in names">{{x.country}} ,{{x.name}}</li>
+			</ul>
+			<ul>
+				<li ng-repeat="x in array1">{{x}}</li>
+			</ul>
+			{{aaa}}
+		</div>
+		
+	</body>
+	<script src="../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/demo.js" type="text/javascript" charset="utf-8"></script>
+</html>

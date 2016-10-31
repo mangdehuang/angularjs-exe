@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div>
+			<div ng-controller="contro1">
+				hello{{name}}
+			</div>
+			<div ng-controller="contro2">
+				<ol>
+					<li ng-repeat="name in names">
+						{{name}} in {{department}}
+					</li>
+					<li>{{name}}</li>
+				</ol>
+			</div>
+		</div>
+	</body>
+	<script src="js/angularjs_MVC.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+</html>
